@@ -55,7 +55,7 @@ public class Products : MonoBehaviour
 	
 	public void Upgrade()
 	{
-	    Debug.Log("Upgrade() function called.");
+	   // Debug.Log("Upgrade() function called.");
 		if(attack_Script_Component.GetBuyStatus())
 		{
 			if(attack_Script_Component.isFullyUpgraded()==true)

@@ -57,7 +57,7 @@ public class TigerAttack : MonoBehaviour
 
     private void Start()
     {
-
+        Debug.Log("Tiger Attack called.");
         tigerSound.SetActive(false);
         _canvas = GameObject.FindGameObjectsWithTag("canvas");
 
@@ -110,7 +110,7 @@ public class TigerAttack : MonoBehaviour
 
         if (allowAttack)
         {
-            //	Debug.Log("Tigers Attacking");
+            Debug.Log("Tigers Attacking");
             AttackOnSheeps();
 
         }
@@ -132,6 +132,7 @@ public class TigerAttack : MonoBehaviour
     {
         allowAttack = false;
         tigerSound.SetActive(false);
+        Debug.Log("Delay called");
         ReverseTimerController.instance.setTime(waves[current_Wave].delay + 1);
         yield return new WaitForSeconds(delay);
         allowAttack = true;
