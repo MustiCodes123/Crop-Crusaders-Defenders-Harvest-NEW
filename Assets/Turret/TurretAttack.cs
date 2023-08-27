@@ -12,6 +12,7 @@ public class CannonAttack : MonoBehaviour
         Advanced,
     }
 
+ 
     public UpgradeLevel currentUpgrade;
     [SerializeField] private Text error_Message_Text;
     [SerializeField] private Text weapon_Upgrade_Message;
@@ -34,23 +35,14 @@ public class CannonAttack : MonoBehaviour
 	private bool isWeaponBought=false;
 	private bool allowWeaponUse=false;
 	
-//	void Awake()
-//{
-//    currentUpgrade = UpgradeLevel.Basic;
-//}
 
     void Start()
     {
-		//isWeaponBought=false;
-		//allowWeaponUse=false;
-		//weapon_Upgrade_Message.gameObject.SetActive(false);
-		//error_Message_Text.gameObject.SetActive(false);
          InvokeRepeating("UpdateTarget", 0f, 0.5f);
+		 
     }
 
   
-
-
      IEnumerator ShowUpgradeMessage(string message, float delay)
      {
      weapon_Upgrade_Message.text = message;
@@ -150,6 +142,7 @@ Debug.Log("Going to set weapon status. ");
 
     void Update()
     {
+		
 		Debug.Log("Upgrade level " + currentUpgrade);
         if (target == null)
             return;

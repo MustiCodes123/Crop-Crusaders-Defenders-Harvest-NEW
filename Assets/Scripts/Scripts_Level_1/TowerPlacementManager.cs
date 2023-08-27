@@ -42,7 +42,7 @@ Debug.Log("Going to increase tower count.");
 			 joystickGameObject.SetActive(false);
             StartCoroutine(PlaceTower());
 			 joystickGameObject.SetActive(true);
-            FadingButton.instance.UpdateFadeDuration(4f);
+            //FadingButton.instance.UpdateFadeDuration(4f);
 
         }
         else
@@ -59,6 +59,7 @@ Debug.Log("Going to increase tower count.");
         {
             if (Input.GetMouseButtonDown(0))
             {
+				Debug.Log("Screen click detected");
                 Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
                 RaycastHit hit;
 
@@ -66,11 +67,12 @@ Debug.Log("Going to increase tower count.");
                 {
                     if (hit.collider.CompareTag("cornfield") || hit.collider.CompareTag("cornfieldmud") || hit.collider.CompareTag("Crop Plant") || hit.collider.CompareTag("canonbase"))
                     {
+						Debug.Log("Got the exact position");
                         Vector3 towerPosition = hit.point;
                         towerPosition.y = 4.75f; // Set the Y position to 4.75
 
-                        Instantiate(towerPrefab, towerPosition, Quaternion.identity);
-
+                        Instantiate(towerPrefab, towerPosition, Quaternion.identity).gameObject.SetActive(true);
+                        
                         availableTowerPlacements--;
                     }
                     else

@@ -617,7 +617,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 629196893793607868}
-  - component: {fileID: 2190720079194719106}
   - component: {fileID: -3817696608631446991}
   - component: {fileID: 7184378518663029707}
   m_Layer: 0
@@ -644,29 +643,6 @@ Transform:
   - {fileID: 6973054552913497245}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2190720079194719106
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1208628316168854819}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5a08e6b1dcd80b4183e3b968ef64077, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentUpgrade: 0
-  fireRate: 1
-  fireCountdown: 0
-  range: 15
-  enemytag: Enemy
-  RotatePart: {fileID: 2004911833484767389}
-  turnSpeed: 10
-  bulletPrefab: {fileID: 6243959705015054622, guid: 7090811aff12eb54b9d1d36fceec1a23,
-    type: 3}
-  firePoint: {fileID: 6973054552913497245}
-  animationController: {fileID: 4005417775239316846}
 --- !u!114 &-3817696608631446991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -679,6 +655,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 826b68d469aef6447b06a7548c46a249, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tower_Prefab: {fileID: 8306737082514237365, guid: 905b08bdd3a90184f8e7203f61482431,
+    type: 3}
   currentUpgrade: 0
   error_Message_Text: {fileID: 0}
   weapon_Upgrade_Message: {fileID: 0}

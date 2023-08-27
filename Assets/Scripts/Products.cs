@@ -114,7 +114,7 @@ public class Products : MonoBehaviour
 		if(count >= price)
 		{
 			CoinsRemaining.SetCoins(count-price);
-			
+			Debug.Log("I am here");
 			attack_Script_Component.SetWeaponStatustoBought();
 			tower.IncreaseTowerCount();
 Debug.Log("Weapon Bought...Going to return true");
