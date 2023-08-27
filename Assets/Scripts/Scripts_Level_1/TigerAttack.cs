@@ -130,12 +130,14 @@ public class TigerAttack : MonoBehaviour
 
     private IEnumerator StartTigerAttackAfterDelay(float delay)
     {
+
         allowAttack = false;
         tigerSound.SetActive(false);
         Debug.Log("Delay called");
         ReverseTimerController.instance.setTime(waves[current_Wave].delay + 1);
         yield return new WaitForSeconds(delay);
         allowAttack = true;
+        tigerSound.SetActive(true);
 
         // Enable NavMeshAgent before allowing the tigers to move
         for (int i = 0; i < tigers.Length; i++)
@@ -143,7 +145,6 @@ public class TigerAttack : MonoBehaviour
             tigers[i].GetComponent<NavMeshAgent>().enabled = true;
         }
 
-        tigerSound.SetActive(true);
     }
 
 

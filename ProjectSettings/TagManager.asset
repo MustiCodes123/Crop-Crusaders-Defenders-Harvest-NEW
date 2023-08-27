@@ -29,6 +29,8 @@ TagManager:
   - upgradebutton
   - equipbutton
   - Woods
+  - Archer
+  - ArcherBase
   layers:
   - Default
   - TransparentFX
