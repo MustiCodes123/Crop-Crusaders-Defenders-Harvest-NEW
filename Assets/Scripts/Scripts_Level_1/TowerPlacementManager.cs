@@ -28,6 +28,7 @@ public class TowerPlacementManager : MonoBehaviour
 	
 	public void IncreaseTowerCount()
 	{
+Debug.Log("Going to increase tower count.");
 		availableTowerPlacements++;
 		Debug.Log("Tower count increase to "+ availableTowerPlacements);
 	}

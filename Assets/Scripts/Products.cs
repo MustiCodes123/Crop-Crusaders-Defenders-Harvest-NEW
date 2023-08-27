@@ -114,9 +114,10 @@ public class Products : MonoBehaviour
 		if(count >= price)
 		{
 			CoinsRemaining.SetCoins(count-price);
-			product_Prefab.SetActive(true);
+			
 			attack_Script_Component.SetWeaponStatustoBought();
 			tower.IncreaseTowerCount();
+Debug.Log("Weapon Bought...Going to return true");
 			return true;
 		}
 		return false;
@@ -128,7 +129,7 @@ public class Products : MonoBehaviour
 		if(count >= price)
 		{
 			CoinsRemaining.SetCoins(count-price);
-			
+			product_Prefab.SetActive(true);
 			attack_Script_Component.SetWeaponStatustoBought();
 			return true;
 		}

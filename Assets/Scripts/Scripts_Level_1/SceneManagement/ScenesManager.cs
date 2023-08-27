@@ -21,7 +21,10 @@ public class ScenesManager : MonoBehaviour
     public enum Scene { 
         MainMenu,
         Level_1_Scene,
-		Level_2_Scene
+		Level_2_Scene,
+Level_3_Scene,
+Level_Selector
+
     }
 
     public void LoadScene(Scene scene)
@@ -35,11 +38,29 @@ public class ScenesManager : MonoBehaviour
 		//Debug.Log("Inside LoadMainMenu");
         LoadScene(Scene.MainMenu);
     }
+
+public void LoadLevel1()
+{
+SceneManager.LoadScene(Scene.Level_1_Scene.ToString(), LoadSceneMode.Single);
+		Time.timeScale = 1f;
+}
+
+public void LoadLevel2()
+{
+SceneManager.LoadScene(Scene.Level_2_Scene.ToString(), LoadSceneMode.Single);
+		Time.timeScale = 1f;
+}
+
+public void LoadLevel3()
+{
+SceneManager.LoadScene(Scene.Level_3_Scene.ToString(), LoadSceneMode.Single);
+		Time.timeScale = 1f;
+}
     
     public void PlayGame()
     {
 		//Debug.Log("Inside PlayGame");
-        SceneManager.LoadScene(Scene.Level_2_Scene.ToString(), LoadSceneMode.Single);
+        SceneManager.LoadScene(Scene.Level_Selector.ToString(), LoadSceneMode.Single);
 		Time.timeScale = 1f;
     }
 	

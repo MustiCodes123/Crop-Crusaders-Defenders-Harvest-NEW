@@ -31,8 +31,8 @@ public class CannonAttack : MonoBehaviour
     public GameObject bulletPrefab;
     public Transform firePoint;
 	
-	private bool isWeaponBought;
-	private bool allowWeaponUse;
+	private bool isWeaponBought=false;
+	private bool allowWeaponUse=false;
 	
 //	void Awake()
 //{
@@ -41,8 +41,8 @@ public class CannonAttack : MonoBehaviour
 
     void Start()
     {
-		isWeaponBought=false;
-		allowWeaponUse=false;
+		//isWeaponBought=false;
+		//allowWeaponUse=false;
 		//weapon_Upgrade_Message.gameObject.SetActive(false);
 		//error_Message_Text.gameObject.SetActive(false);
          InvokeRepeating("UpdateTarget", 0f, 0.5f);
@@ -116,12 +116,14 @@ public class CannonAttack : MonoBehaviour
 	
 	public bool GetBuyStatus()
 	{
+Debug.Log("isWeaponBought set to "+isWeaponBought);
 		return isWeaponBought;
-		Debug.Log("allowWeaponUse set to "+allowWeaponUse);
+		
 	}
 	
 	public void SetWeaponStatustoBought()
 	{
+Debug.Log("Going to set weapon status. ");
 		isWeaponBought=true;
 		Debug.Log("isWeaponBought set to "+isWeaponBought);
 	}
