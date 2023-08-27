@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.32640216, g: 0.2898854, b: 0.32136965, a: 1}
+  m_IndirectSpecularColor: {r: 0.32685196, g: 0.28963044, b: 0.32220048, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -523,17 +523,17 @@ PrefabInstance:
     - target: {fileID: 2240879003016808494, guid: 519222ddb3660ae449ed54be13c87ae7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.228514
+      value: -11.238907
       objectReference: {fileID: 0}
     - target: {fileID: 2240879003016808494, guid: 519222ddb3660ae449ed54be13c87ae7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 12.548807
+      value: 12.548808
       objectReference: {fileID: 0}
     - target: {fileID: 2240879003016808494, guid: 519222ddb3660ae449ed54be13c87ae7,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -24.400806
+      value: -24.400686
       objectReference: {fileID: 0}
     - target: {fileID: 2361379443879780401, guid: 519222ddb3660ae449ed54be13c87ae7,
         type: 3}
@@ -595,6 +595,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3799004420586627572, guid: 519222ddb3660ae449ed54be13c87ae7,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1dbc79251574f4646bb8fea545f89e8f, type: 2}
     - target: {fileID: 3975617782924581642, guid: 519222ddb3660ae449ed54be13c87ae7,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -623,17 +628,17 @@ PrefabInstance:
     - target: {fileID: 6621055600573942871, guid: 519222ddb3660ae449ed54be13c87ae7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.228514
+      value: -11.238907
       objectReference: {fileID: 0}
     - target: {fileID: 6621055600573942871, guid: 519222ddb3660ae449ed54be13c87ae7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 12.548807
+      value: 12.548808
       objectReference: {fileID: 0}
     - target: {fileID: 6621055600573942871, guid: 519222ddb3660ae449ed54be13c87ae7,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -24.400806
+      value: -24.400686
       objectReference: {fileID: 0}
     - target: {fileID: 6630923887068319338, guid: 519222ddb3660ae449ed54be13c87ae7,
         type: 3}
