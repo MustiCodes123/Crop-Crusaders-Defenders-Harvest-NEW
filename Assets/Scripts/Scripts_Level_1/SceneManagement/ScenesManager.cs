@@ -20,10 +20,11 @@ public class ScenesManager : MonoBehaviour
 
     public enum Scene { 
         MainMenu,
+Level_Selector,
         Level_1_Scene,
 		Level_2_Scene,
 Level_3_Scene,
-Level_Selector
+
 
     }
 
