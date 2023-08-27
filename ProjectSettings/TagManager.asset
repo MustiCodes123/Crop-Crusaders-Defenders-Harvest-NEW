@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Enemy
+  - cornfield
+  - cornfieldmud
+  - Ground
+  - Bullet
+  - Coin
+  - canvas
+  - Farmer
+  - Crop Plant
+  - Scarecrow
+  - Cannon Base
+  - LeftBoundary
+  - RightBoundary
+  - BackBoundary
+  - FrontBoundary
+  - sheep
+  - canon
+  - ReturnTag
+  - canonbase
+  - AttackRadius
+  - river
+  - buybutton
+  - upgradebutton
+  - equipbutton
+  - Woods
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Enemy
+  - Water
+  - UI
+  - Player
+  - Boundary
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

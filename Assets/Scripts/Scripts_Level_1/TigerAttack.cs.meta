@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6e0e2cbd5f066704ca873b4bb294a11c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - tigerAnimator: {instanceID: 0}
+  - tiger_Prefab: {fileID: 320919087816569539, guid: f5b37d980cfc68f4ea1e80135f5ead56,
+      type: 3}
+  - tigerSound: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
