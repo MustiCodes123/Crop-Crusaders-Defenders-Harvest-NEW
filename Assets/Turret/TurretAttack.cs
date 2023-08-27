@@ -34,10 +34,10 @@ public class CannonAttack : MonoBehaviour
 	private bool isWeaponBought;
 	private bool allowWeaponUse;
 	
-	void Awake()
-{
-    currentUpgrade = UpgradeLevel.Basic;
-}
+//	void Awake()
+//{
+//    currentUpgrade = UpgradeLevel.Basic;
+//}
 
     void Start()
     {
