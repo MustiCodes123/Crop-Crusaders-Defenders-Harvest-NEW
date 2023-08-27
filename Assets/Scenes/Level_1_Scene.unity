@@ -50700,6 +50700,21 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2820707408694576077, guid: 4e894917a88b02a4889729012abbecce,
+        type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 2820707408694576077, guid: 4e894917a88b02a4889729012abbecce,
+        type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 2820707408694576077, guid: 4e894917a88b02a4889729012abbecce,
+        type: 3}
+      propertyPath: m_LODs.Array.data[1].renderers.Array.data[0].renderer
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2825204644167210395, guid: 4e894917a88b02a4889729012abbecce,
         type: 3}
       propertyPath: m_TagString
@@ -52591,6 +52606,7 @@ PrefabInstance:
     - {fileID: 9137698906886392379, guid: 4e894917a88b02a4889729012abbecce, type: 3}
     - {fileID: 2370595632387282044, guid: 4e894917a88b02a4889729012abbecce, type: 3}
     - {fileID: 3922484741193258578, guid: 4e894917a88b02a4889729012abbecce, type: 3}
+    - {fileID: 2738046690961879457, guid: 4e894917a88b02a4889729012abbecce, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 4534870273098892016, guid: 4e894917a88b02a4889729012abbecce,
         type: 3}
