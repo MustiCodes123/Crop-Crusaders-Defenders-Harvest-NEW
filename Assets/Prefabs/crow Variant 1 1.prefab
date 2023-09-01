@@ -507,7 +507,7 @@ MonoBehaviour:
   coinPrefab: {fileID: 3558940858164830281, guid: 5549b518c7563eb4b88ab425e585fcc6,
     type: 3}
   coinDropHeight: 5
-  upwardForce: 21.86
+  upwardForce: 2.1474836e+9
 --- !u!82 &-696438306565295045
 AudioSource:
   m_ObjectHideFlags: 0

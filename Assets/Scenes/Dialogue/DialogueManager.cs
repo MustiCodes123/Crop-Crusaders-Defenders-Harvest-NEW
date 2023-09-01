@@ -8,6 +8,7 @@ public class DialogueManager : MonoBehaviour
     public Text dialogueText;
     private Queue<string> sentences;
     public GameObject dialogueCanvas;
+    public Button nextButton;
 
     void Start()
     {
@@ -39,7 +40,7 @@ public class DialogueManager : MonoBehaviour
             EndDialogue();
             return;
         }
-
+        nextButton.interactable = false;
         string sentence = sentences.Dequeue();
         Debug.Log(sentence);
         StartCoroutine(TypeSentence(sentence));
@@ -55,7 +56,8 @@ public class DialogueManager : MonoBehaviour
             yield return null;
 
         }
-    
+        nextButton.interactable = true;
+
     }
 
 

@@ -5,7 +5,7 @@ public class BulletHit : MonoBehaviour
     private int bulletCount = 0;
     public GameObject coinPrefab;
     public float coinDropHeight = 5.0f;
-    public float upwardForce = 25.0f; // Adjust this to control the upward force applied to the crow
+    public float upwardForce = 2147483647; // Adjust this to control the upward force applied to the crow
 
     private Rigidbody rb;
 

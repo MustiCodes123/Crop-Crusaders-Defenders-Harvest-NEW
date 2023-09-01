@@ -9,7 +9,7 @@ public class FarmDropCoin : MonoBehaviour
     public HealthBarScript fieldhealth;
     public GameObject farmPosition;
 
-    private float healthThreshold = 50f; // Updated health threshold to 50
+    private float healthThreshold = 100f; // Updated health threshold to 50
     private float timeThreshold = 10f;
     private float elapsedTime = 0f;
 
